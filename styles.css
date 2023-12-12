@@ -16,10 +16,6 @@
     /* Adicione estilos adicionais conforme necessário */
 }
 
-/* Formulário */
-.form-section {
-    /* Adicione estilos conforme necessário */
-}
 
 /* Seção de endereço */
 .address-section {
@@ -31,10 +27,20 @@ footer {
     background-color: #8B0000;
     color: white; /* Define a cor do texto para branco */
     padding: 20px; /* Ajuste o espaçamento interno conforme necessário */
+    position: relative;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .social-icons img {
-    width: 20px; /* Ajuste o tamanho dos ícones conforme necessário */
+    width: 20px;
     margin-right: 10px;
 }
 
@@ -82,15 +88,20 @@ footer {
 
 .form-and-image-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .custom-form {
     max-width: 400px;
-    margin: 20px auto;
+    width: 50%; /* Ajuste conforme necessário */
+    margin: 20px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 .custom-form h2 {
@@ -100,7 +111,7 @@ footer {
 .custom-form label {
     display: flex;
     margin-top: 10px;
-    align-items: center; /* Alinha os itens verticalmente para centralizar o checkbox */
+    align-items: center;
 }
 
 .custom-form input,
@@ -125,27 +136,28 @@ footer {
 }
 
 .image-container {
-    flex-grow: 1; /* Para ocupar o restante do espaço disponível */
+    flex-grow: 1;
+    margin: 20px;
+    text-align: center;
 }
 
 .image-container img {
     width: 100%;
     height: auto;
-    border-radius: 10px; /* Cantos redondos para a imagem */
+    border-radius: 10px;
 }
-
 /* Restante do seu CSS continua abaixo */
 /* ... */
 
 /* Media query para telas menores */
 @media (max-width: 767px) {
     .form-and-image-container {
-        flex-direction: column; /* Empilha os elementos verticalmente em telas menores */
+        flex-direction: column;
     }
 
     .custom-form,
     .image-container {
-        margin: 20px 0; /* Adapta a margem para melhorar o espaçamento em telas menores */
+        margin: 20px 0;
     }
 
     .card {
