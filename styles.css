@@ -1,0 +1,154 @@
+/* styles.css */
+
+
+
+/* Navbar */
+.navbar-dark.bg-dark-red {
+    background-color: #8B0000; /* Vermelho escuro */
+}
+
+
+/* Seção com 4 cards */
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Adicione estilos adicionais conforme necessário */
+}
+
+/* Formulário */
+.form-section {
+    /* Adicione estilos conforme necessário */
+}
+
+/* Seção de endereço */
+.address-section {
+    /* Adicione estilos conforme necessário */
+}
+
+/* Footer */
+footer {
+    background-color: #8B0000;
+    color: white; /* Define a cor do texto para branco */
+    padding: 20px; /* Ajuste o espaçamento interno conforme necessário */
+}
+
+.social-icons img {
+    width: 20px; /* Ajuste o tamanho dos ícones conforme necessário */
+    margin-right: 10px;
+}
+
+
+.background-div {
+    background: url('media/bgdiv1.png') center center/cover no-repeat;
+    position: relative;
+    text-align: center;
+    color: white; /* Adicione cor do texto conforme necessário */
+    padding: 100px 0; /* Ajuste conforme necessário */
+}
+
+.background-div .h1div1 {
+    margin-left: 5%; /* Adicione a margem desejada */
+    font-size: 2em; /* Ajuste conforme necessário */
+    text-align: left; /* Alinhe o texto à esquerda */
+}
+
+
+.background-div .btn-primary {
+    right: 30%;
+    left: 70%;
+}
+
+.background-div .btn-secondary {
+    right: 70%;
+    left: 30%;
+}
+
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: calc(25% - 40px); /* Calcula a largura para 4 cards por linha com margens */
+    margin: 20px; /* ou ajuste conforme necessário */
+}
+
+.choose-inflatable-heading{
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.form-and-image-container {
+    display: flex;
+}
+
+.custom-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-form h2 {
+    text-align: center;
+}
+
+.custom-form label {
+    display: flex;
+    margin-top: 10px;
+    align-items: center; /* Alinha os itens verticalmente para centralizar o checkbox */
+}
+
+.custom-form input,
+.custom-form input[type="checkbox"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.custom-form button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.image-container {
+    flex-grow: 1; /* Para ocupar o restante do espaço disponível */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Cantos redondos para a imagem */
+}
+
+/* Restante do seu CSS continua abaixo */
+/* ... */
+
+/* Media query para telas menores */
+@media (max-width: 767px) {
+    .form-and-image-container {
+        flex-direction: column; /* Empilha os elementos verticalmente em telas menores */
+    }
+
+    .custom-form,
+    .image-container {
+        margin: 20px 0; /* Adapta a margem para melhorar o espaçamento em telas menores */
+    }
+
+    .card {
+        width: calc(100% - 40px);
+    }
+}

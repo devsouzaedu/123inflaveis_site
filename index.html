@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>123 Infláveis | Infláveis Personalizados</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark-red">
+        <a class="navbar-brand" href="#">
+            <img src="logo_nobg.png" alt="Logo" width="90" height="23">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Infláveis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Depoimentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Orçamento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Div com imagem de fundo, h1 e dois botões -->
+    <div class="background-div">
+        <h1 class="h1div1">123 Infláveis<br>
+            Infláveis<br>
+            Promocionais
+        </h1>
+        <button class="btn btn-primary">Fazer orçamento</button>
+        <button class="btn btn-secondary">Projetos</button>
+    </div>
+
+
+    <section class="choose-inflatable-section">
+        <h1 class="choose-inflatable-heading">Escolha seu Inflável</h1>
+        <div class="card-section">
+            <!-- Card 1 -->
+            <div class="card">
+                <!-- Imagem do Card 1 -->
+                <img src="media/tenda.jpg" class="card-img-top" alt="Imagem do Card 1">
+                <div class="card-body">
+                    <!-- Descrição do Card 1 -->
+                    <p class="card-text">A Tenda Inflável Personalizada é a solução ideal para realçar sua marca e impulsionar vendas em eventos e promoções. Com design impactante, é um ímã para a atenção dos clientes..</p>
+                    <!-- Botão do Card 1 -->
+                    <button class="btn btn-primary">Fazer orçamento</button>
+                </div>
+            </div>
+
+             <!-- Card 2 -->
+             <div class="card">
+                <!-- Imagem do Card 2 -->
+                <img src="media/rooftop.png" class="card-img-top" alt="Imagem do Card 1">
+                <div class="card-body">
+                    <!-- Descrição do Card 2 -->
+                    <p class="card-text">O Rooftop é a solução ideal para realçar sua marca e impulsionar vendas em eventos e promoções. Com design impactante, é um ímã para a atenção dos clientes..</p>
+                    <!-- Botão do Card 2 -->
+                    <button class="btn btn-primary">Fazer orçamento</button>
+                </div>
+            </div>
+
+             <!-- Card 3 -->
+             <div class="card">
+                <!-- Imagem do Card 3 -->
+                <img src="media/3-2.png.png" class="card-img-top" alt="Imagem do Card 1">
+                <div class="card-body">
+                    <!-- Descrição do Card 3 -->
+                    <p class="card-text">O Portal é a solução ideal para realçar sua marca e impulsionar vendas em eventos e promoções. Com design impactante, é um ímã para a atenção dos clientes..</p>
+                    <!-- Botão do Card 3 -->
+                    <button class="btn btn-primary">Fazer orçamento</button>
+                </div>
+            </div>
+
+             <!-- Card 4 -->
+             <div class="card">
+                <!-- Imagem do Card 4 -->
+                <img src="media/6-2.png.png" class="card-img-top" alt="Imagem do Card 1">
+                <div class="card-body">
+                    <!-- Descrição do Card 4 -->
+                    <p class="card-text">A Replica Inflável é a solução ideal para realçar sua marca e impulsionar vendas em eventos e promoções. Com design impactante, é um ímã para a atenção dos clientes..</p>
+                    <!-- Botão do Card 4 -->
+                    <button class="btn btn-primary">Fazer orçamento</button>
+                </div>
+            </div>
+
+            <!------Form-->
+
+            <div class="form-and-image-container">
+                <div class="custom-form">
+                    <form action="seu_script_de_processamento.php" method="post">
+                        <h2>Solicite um Orçamento</h2>
+            
+                    <!-- Campo Seu Nome -->
+                    <label for="nome">Seu Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+            
+                    <!-- Campo Seu Email -->
+                    <label for="email">Seu Email:</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <!-- Campo Seu Telefone -->
+                    <label for="telefone">Seu Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+            
+                    <!-- Campo Sua Empresa -->
+                    <label for="empresa">Sua Empresa:</label>
+                    <input type="text" id="empresa" name="empresa">
+            
+                    <!-- Checkbox para concordar com as comunicações e ofertas -->
+                    <label>
+                        <input type="checkbox" name="concordo" required>
+                        Eu concordo em receber comunicações e ofertas personalizadas de acordo com meus interesses
+                    </label>
+            
+                    <!-- Botão de Envio -->
+                    <button type="submit">Solicitar Orçamento</button>
+                </form>
+            </div>
+
+            <div class="image-container">
+                <img src="media/bg_form2.png" alt="Imagem de fundo">
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2023 123Inflaveis LTDA ME</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><img src="media/ig_icon_ft.png" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="media/tktk_icon_ft.png" alt="Twitter"></a>
+                    <a href="#" target="_blank"><img src="media/wpp_icon_ft.png" alt="Instagram"></a>
+                    <a href="#" target="_blank"><img src="media/lkn_icon_ft.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </footer>
+    
+</body>
+
+</html>
