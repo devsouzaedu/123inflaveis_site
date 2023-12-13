@@ -44,30 +44,36 @@ footer {
     margin-right: 10px;
 }
 
-
 .background-div {
-    background: url('media/bgdiv1.png') center center/cover no-repeat;
     position: relative;
     text-align: center;
-    color: white; /* Adicione cor do texto conforme necessário */
-    padding: 100px 0; /* Ajuste conforme necessário */
+    color: white;
+    padding: 100px 0;
+    background: url('media/bgdiv1.png') center center/cover no-repeat;
+    height: 90vh; /* Adiciona a altura de 100% da viewport height */
 }
 
 .background-div .h1div1 {
-    margin-left: 5%; /* Adicione a margem desejada */
-    font-size: 2em; /* Ajuste conforme necessário */
-    text-align: left; /* Alinhe o texto à esquerda */
+    margin-left: 5%;
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 20px; /* Adiciona um espaçamento inferior */
 }
 
+.background-div .btn-primary,
+.background-div .btn-secondary {
+    position: absolute;
+    bottom: 5%;
+    width: 30%; /* Ajuste conforme necessário */
+    padding: 10px;
+}
 
 .background-div .btn-primary {
-    right: 30%;
-    left: 70%;
+    left: 10%;
 }
 
 .background-div .btn-secondary {
-    right: 70%;
-    left: 30%;
+    right: 10%;
 }
 
 .card-section {
@@ -77,8 +83,13 @@ footer {
 }
 
 .card {
-    width: calc(25% - 40px); /* Calcula a largura para 4 cards por linha com margens */
-    margin: 20px; /* ou ajuste conforme necessário */
+    width: calc(25% - 40px);
+    margin: 20px;
+    padding: 10px;
+    border: 4px solid #000000; /* Ajuste a largura da borda conforme necessário */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    box-sizing: border-box;
 }
 
 .choose-inflatable-heading{
@@ -98,7 +109,7 @@ footer {
     width: 50%; /* Ajuste conforme necessário */
     margin: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 3px solid #000000; /* Ajuste a largura da borda conforme necessário */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
@@ -121,8 +132,10 @@ footer {
     margin-top: 5px;
     margin-bottom: 10px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 3px solid #000000; /* Ajuste a largura da borda conforme necessário */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 .custom-form button {
@@ -130,8 +143,10 @@ footer {
     padding: 10px;
     background-color: #8B0000;
     color: white;
-    border: none;
+    border: 3px solid #000000; /* Ajuste a largura da borda conforme necessário */
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
     cursor: pointer;
 }
 
@@ -144,23 +159,92 @@ footer {
 .image-container img {
     width: 100%;
     height: auto;
+    border: 3px solid #000000; /* Ajuste a largura da borda conforme necessário */
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
+
+.testimonial-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.testimonial-card {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid black; /* Borda preta e grossa de 3px */
+    border-radius: 15px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow leve */
+    flex: 1; /* Cada depoimento ocupa a largura igual na linha */
+}
+
+.testimonial-image {
+    border-radius: 50%;
+    width: 50%; /* Define a largura da imagem como 15% do contêiner pai */
+    max-width: 100px; /* Define uma largura máxima para garantir que não seja muito grande */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover;
+    margin-bottom: 15px; /* Adiciona espaço entre a imagem e o texto */
+}
+
+.testimonial-name {
+    margin-bottom: 10px; /* Adiciona espaço entre o nome e as estrelas */
+}
+
+.h1Depo {
+    text-align: center;
+    margin: 20px 20px;
+}
+
+
+/* Adiciona um espaçamento entre os depoimentos para formar 3 colunas */
+
+
 /* Restante do seu CSS continua abaixo */
 /* ... */
 
 /* Media query para telas menores */
 @media (max-width: 767px) {
     .form-and-image-container {
-        flex-direction: column;
+        flex-direction: column; /* Altera a direção do contêiner flexível para coluna */
     }
 
     .custom-form,
     .image-container {
-        margin: 20px 0;
+        margin: 10px; /* Adiciona margens para espaçamento */
+        width: calc(100% - 20px); /* Define a largura total com margens à esquerda e à direita */
     }
 
     .card {
         width: calc(100% - 40px);
     }
+
+
+    .background-div img {
+        margin-left: 20%; /* Adiciona uma margem à esquerda para a imagem */
+    }
+
+    .background-div .btn-primary,
+    .background-div .btn-secondary {
+        width: 80%; /* Ajuste conforme necessário para ocupar a largura total */
+        margin: 0 auto; /* Centraliza os botões na tela */
+        display: block; /* Garante que os botões sejam exibidos como blocos */
+        position: static; /* Remove a propriedade 'position: absolute;' */
+        bottom: auto; /* Remove a propriedade 'bottom' */
+        right: auto; /* Remove a propriedade 'right' */
+    }
+
+    .background-div .btn-primary {
+        margin-top: 40%; /* Ajuste conforme necessário para definir a posição vertical */
+    }
+
+    .background-div .btn-secondary {
+        margin-top: 10px; /* Adiciona um espaçamento entre os botões */
+    }
+
+    
 }
